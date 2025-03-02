@@ -1,0 +1,31 @@
+name: autogen-issue-resolver
+
+services:
+  svc1:
+    build: ./svc1
+    ports:
+      - "5001:5001"
+  svc2:
+    build: ./svc2
+    ports:
+      - "5002:5002"
+    depends_on:
+      - svc1
+  svc3:
+    build: ./svc3
+    ports:
+      - "5003:5003"
+    depends_on:
+      - svc2
+  web:
+    build: ./web
+    ports:
+      - "8080:8080"
+    depends_on:
+      - svc3
+  agt:
+    build: ./agts
+    ports:
+      - "5004:5004"
+    depends_on:
+      - web
