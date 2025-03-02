@@ -4,6 +4,8 @@
 This is a simple prototyp using AutoGen Multi-Agent framework to resolve issues in a distributed system.
 
 ## How to run
+To use the AutoGen Assistant Agents on OpenAI GPT-4o you need to have an OpenAI account and API key and need to set it in the file [agts/agent.py](./agts/agent.py).
+
 This prototype needs docker and docker-compose to run. To start the system, run the following command in the root directory of the project:
 
 ```bash
