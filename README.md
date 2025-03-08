@@ -9,7 +9,7 @@ To use the AutoGen Assistant Agents on OpenAI GPT-4o you need to have an OpenAI 
 This prototype needs docker and docker-compose to run. To start the system, run the following command in the root directory of the project:
 
 ```bash
-docker-compose up
+docker compose up
 ```
 
 This will start the system with 5 containers:
@@ -21,3 +21,6 @@ This will start the system with 5 containers:
 5. A VueJS frontend (frontend) to visualize the system state and AutoGen agent results [README](./web/README.md)
 
 After the system is started, you can access the frontend at http://localhost:8080.
+
+This image displays the flow of the system:
+[![System Flow](./FLOW.png)](./FLOW.png)
